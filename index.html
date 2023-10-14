@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-eskapisme: En digtsamling af Sofus Ellegaard</title>
+    <script src="https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        main {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #ddd;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="https://instagram.com/sofus_ellegaard?igshid=MzRlODBiNWFlZA==" target="_blank">Instagram</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Anti-eskapisme:</h1>
+    <h2>En digtsamling af Sofus Ellegaard</h2>
+
+    <div id='product-component-1697222126933'></div>
+
+    <p>18 digte af Sofus Ellegaard.</p>
+    <p>Illustreret af Victor Ellegaard.</p>
+</main>
+
+<script>
+(function () {
+    var client = ShopifyBuy.buildClient({
+        domain: '3ca8fa.myshopify.com',
+        storefrontAccessToken: '837e7303514f65266b920be75d1ca327',
+    });
+
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+        ui.createComponent('product', {
+            id: '8674327920989',
+            node: document.getElementById('product-component-1697222126933'),
+            moneyFormat: '%7B%7Bamount_with_comma_separator%7D%7D%20kr',
+            options: {
+                "product": {
+                    "styles": {
+                        "@media (min-width: 601px)": {
+                            "product": {
+                                "max-width": "100%",
+                                "margin-left": "0px",
+                                "margin-bottom": "0px"
+                            },
+                            "button": {
+                                "font-weight": "bold",
+                                ":hover": {
+                                    "background-color": "#000000"
+                                },
+                                "background-color": "#000000",
+                                ":focus": {
+                                    "background-color": "#000000"
+                                },
+                                "border-radius": "2px",
+                                "padding-left": "30px",
+                                "padding-right": "30px"
+                            }
+                        },
+                        "text": {
+                            "button": "Add to cart"
+                        }
+                    },
+                }
+            }
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
